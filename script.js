@@ -76,7 +76,7 @@ function checkWinner(player, position) {
         loser = player1Label.textContent;
   
         // Custom winner message for Player 2
-        winnerMessageText = `pel na ban tam dan jivit ke tt ${winner}?`;
+        winnerMessageText = `Pel na ban chhob tam dan jivit ke tt ${winner}?`;
       }
   
       // Display the winner message
