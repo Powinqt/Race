@@ -11,7 +11,7 @@ const startGameBtn = document.getElementById("start-game");
 
 let player1Position = 0;
 let player2Position = 0;
-const trackLength = 315; // Adjust based on your track width
+const trackLength = 300; // Adjust based on your track width
 
 // Start Game Setup
 startGameBtn.addEventListener("click", () => {
