@@ -70,13 +70,13 @@ function checkWinner(player, position) {
         loser = player2Label.textContent;
   
         // Custom winner message for Player 1
-        winnerMessageText = `${winner} Pel na ban Dosleng Vichea tv ???`;
+        winnerMessageText = `${winner} Pel na ban Dosleng ke tv ???`;
       } else {
         winner = player2Label.textContent;
         loser = player1Label.textContent;
   
         // Custom winner message for Player 2
-        winnerMessageText = `${winner} joub Vin hz jos pel na Sakk joub Vichea Dae?`;
+        winnerMessageText = `pel na ban tam dan jivit ke tt ${winner}?`;
       }
   
       // Display the winner message
