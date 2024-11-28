@@ -1,0 +1,207 @@
+body {
+  background-image: url('BAckground.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #0a0000;
+}
+
+.game-container {
+  margin: 20px auto;
+  max-width: 600px;
+  font-size: 1rem; /* Set default font size */
+  width: 100%;
+}
+
+.player-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Allow inputs to stack on smaller screens */
+}
+
+.player-setup {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  max-width: 200px; /* Limit the width */
+  font-size: 16px;
+  border: 2px solid #8b2525;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+input[type="file"] {
+  padding: 5px;
+  width: 100%; /* Make the file input full-width */
+}
+
+.track {
+  margin: 30px 0;
+  position: relative;
+  height: 100px;
+}
+
+.player-track {
+  position: relative;
+  height: 100px;
+  border: 2px solid #ddd;
+  margin-bottom: 10px;
+  background-image: url('Track.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.Header {
+  font-size: large;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.player-icon {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: left 0.5s ease-in-out;
+}
+
+.Sal,
+.Sakk {
+  margin-top: 45px;
+  font-size: large;
+  font-family:'Courier New', Courier, monospace;
+  word-spacing: 500px;
+}
+
+.controls {
+  margin-top: 200px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  background-color: #333;
+  font-family: fantasy;
+}
+
+/* Winner Message */
+#winner-message {
+  padding-top: 20px;
+  font-size: 50px;
+  font-family:'Courier New', Courier, monospace;
+  color: rgb(8, 4, 4);
+  margin-top: 20px;
+}
+
+/* Responsive Design - iPhone 15 Pro Max and smaller devices */
+@media (max-width: 430px) {
+  .game-container {
+      padding: 10px;
+      max-width: 100%;
+  }
+
+  .player-inputs {
+      flex-direction: column; /* Stack the player input fields */
+      align-items: center;
+  }
+
+  .player-setup {
+      margin-top: 15px;
+  }
+
+  .player-icon {
+      width: 80px; /* Smaller player icon size */
+      height: 80px;
+  }
+
+  input[type="text"] {
+      width: 80%; /* Input fields take up more width on smaller screens */
+  }
+
+  button {
+      width: 100%; /* Make buttons full-width on small screens */
+  }
+
+  .Sal, .Sakk {
+      font-size: 18px; /* Adjust font size for smaller screens */
+      word-spacing: normal; /* Adjust word spacing */
+  }
+
+  #winner-message {
+      font-size: 35px; /* Smaller winner message on mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  /* For tablets and medium-sized devices */
+  .game-container {
+      max-width: 90%;
+  }
+
+  .player-inputs {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  input[type="text"], input[type="file"] {
+      width: 85%;
+  }
+
+  button {
+      width: 90%;
+  }
+
+  .Sal, .Sakk {
+      font-size: 20px;
+  }
+
+  #winner-message {
+      font-size: 45px;
+  }
+}
+
+/* Large devices (laptops/desktops) */
+@media (min-width: 1024px) {
+  .game-container {
+      max-width: 600px;
+  }
+
+  .player-inputs {
+      justify-content: space-between;
+  }
+
+  button {
+      width: auto;
+  }
+
+  .player-icon {
+      width: 100px;
+      height: 100px;
+  }
+
+  .Sal, .Sakk {
+      font-size: large;
+  }
+
+  #winner-message {
+      font-size: 50px;
+  }
+}
