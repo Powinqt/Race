@@ -47,11 +47,11 @@ rollDiceBtn.addEventListener("click", () => {
   // Alternate turns between players
   if (player1Position < trackLength && player2Position < trackLength) {
     if (player1Position <= player2Position) {
-      player1Position += diceRoll * 10; // Move Player 1
+      player1Position += diceRoll * 25; // Move Player 1
       player1Icon.style.left = `${Math.min(player1Position, trackLength)}px`;
       checkWinner(player1Label.textContent, player1Position);
     } else {
-      player2Position += diceRoll * 10; // Move Player 2
+      player2Position += diceRoll * 25; // Move Player 2
       player2Icon.style.left = `${Math.min(player2Position, trackLength)}px`;
       checkWinner(player2Label.textContent, player2Position);
     }
